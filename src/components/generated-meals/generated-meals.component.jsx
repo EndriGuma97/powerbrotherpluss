@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { selectCategoriesMap } from "../../store/categories/category.selector";
 import './generated-meals.styles.scss';
+
 const GeneratedMeals = () => {
+
+  const [activeCard, setActiveCard ] = useState(1);
    const categoryMap = useSelector(selectCategoriesMap);
     const { meals } = categoryMap;
     const {age, activityLevel, gender, goal, height, weight } = categoryMap;
@@ -54,8 +58,8 @@ const GeneratedMeals = () => {
 //300 calories should be the snack
 
     return (
-    <div>
-        <div className="meal-cart">{meals[0] ? <div className="meal-info">
+    <div className="generatedmealcards">
+        <div className="meal-cart" style={{ display: activeCard === 1 ? 'block' : 'none' }}>{meals[0] ? <div className="meal-info">
            <h1>Nr 1. {meals[0].name}</h1>
            <img src={meals[0].imageUrl} alt={meals[0].name} />
            <p>Meal Calories: {calories / 3 - 300}</p>
@@ -65,10 +69,10 @@ const GeneratedMeals = () => {
            <p>{meals[0].nameIngridient4per100cal}: {Math.trunc((meals[0].ingridient4per100cal * (calories / 3 - 300)) / 100)} gr</p>
            <p>Recipe: {meals[0].recipe}</p>
             </div>
-                : <p className="no-meals">No meal generated yet...(1)</p>}</div>
-                   <div className="meal-cart">{meals[1] ? <div className="meal-info">
-           <h1>Nr 1. {meals[1].name}</h1>
-           <img src={meals[1].imageUrl} alt={meals[0].name} />
+                : <p className="no-meals">No meal generated yet...(1)</p>}</div> 
+                  <div className="meal-cart" style={{ display: activeCard === 2 ? 'block' : 'none' }}>{meals[1] ? <div className="meal-info">
+           <h1>Nr 2. {meals[1].name}</h1>
+           <img src={meals[1].imageUrl} alt={meals[1].name} />
            <p>Meal Calories: {calories / 3 - 300}</p>
            <p>{meals[1].nameIngridient1per100cal}: {Math.trunc((meals[1].ingridient1per100cal * (calories / 3 - 300)) / 100)} gr</p>
            <p>{meals[1].nameIngridient2per100cal}: {Math.trunc((meals[1].ingridient2per100cal * (calories / 3 - 300)) / 100)} gr</p>
@@ -77,9 +81,9 @@ const GeneratedMeals = () => {
            <p>Recipe: {meals[1].recipe}</p>
             </div>
                 : <p className="no-meals">No meal generated yet...(2)</p>}</div>
-                                   <div className="meal-cart">{meals[2] ? <div className="meal-info">
-           <h1>Nr 1. {meals[2].name}</h1>
-           <img src={meals[2].imageUrl} alt={meals[0].name} />
+                                    <div className="meal-cart" style={{ display: activeCard === 3 ? 'block' : 'none' }}>{meals[2] ? <div className="meal-info">
+           <h1>Nr 3. {meals[2].name}</h1>
+           <img src={meals[2].imageUrl} alt={meals[2].name} />
            <p>Meal Calories: {calories / 3 - 300}</p>
            <p>{meals[2].nameIngridient1per100cal}: {Math.trunc((meals[2].ingridient1per100cal * (calories / 3 - 300)) / 100)} gr</p>
            <p>{meals[2].nameIngridient2per100cal}: {Math.trunc((meals[2].ingridient2per100cal * (calories / 3 - 300)) / 100)} gr</p>
@@ -88,10 +92,13 @@ const GeneratedMeals = () => {
            <p>Recipe: {meals[2].recipe}</p>
             </div>
                 : <p className="no-meals">No meal generated yet...(3)</p>}</div>
-                <div className="meal-cart">
+                <div className="meal-cart" style={{ display: activeCard === 4 ? 'block' : 'none' }}>
                   <p className="no-meals">300 Calories Snack</p>
-                </div>
-
+                </div> 
+                <div className="carousel-buttons">             <span onClick={() => setActiveCard(activeCard > 1 ? activeCard - 1 : 4)}><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm48-88a8,8,0,0,1-8,8H107.31l18.35,18.34a8,8,0,0,1-11.32,11.32l-32-32a8,8,0,0,1,0-11.32l32-32a8,8,0,0,1,11.32,11.32L107.31,120H168A8,8,0,0,1,176,128Z"></path></svg></span>
+                <span onClick={() => setActiveCard(activeCard < 4 ? activeCard + 1 : 1)}><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-93.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32Z"></path></svg></span></div>
+   
+  
     </div>)
 }
 
