@@ -93,7 +93,14 @@ const GeneratedMeals = () => {
             </div>
                 : <p className="no-meals">No meal generated yet...(3)</p>}</div>
                 <div className="meal-cart" style={{ display: activeCard === 4 ? 'block' : 'none' }}>
-                  <p className="no-meals">300 Calories Snack</p>
+                <div className="meal-info">
+           <h1>Snack: 1 Apple w/2 Tbsp almond butter & 1 Egg</h1>
+           <img src="https://images.unsplash.com/photo-1584306670957-acf935f5033c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80" alt='an apple'/>
+           <p>Snack Calories: 332</p>
+           <p>1 apple</p>
+           <p>2 tablespoons of almond butter</p>
+           <p>1 boiled egg</p>
+            </div>
                 </div> 
                 <div className="carousel-buttons">             <span onClick={() => setActiveCard(activeCard > 1 ? activeCard - 1 : 4)}><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm48-88a8,8,0,0,1-8,8H107.31l18.35,18.34a8,8,0,0,1-11.32,11.32l-32-32a8,8,0,0,1,0-11.32l32-32a8,8,0,0,1,11.32,11.32L107.31,120H168A8,8,0,0,1,176,128Z"></path></svg></span>
                 <span onClick={() => setActiveCard(activeCard < 4 ? activeCard + 1 : 1)}><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-93.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32Z"></path></svg></span></div>
