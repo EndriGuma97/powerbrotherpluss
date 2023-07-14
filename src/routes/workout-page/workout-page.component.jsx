@@ -6,7 +6,7 @@ const WorkoutPage = () => {
     return (
       <div>
         <div class="designwrap">
-    <h1 class="design">WORKOUTS PAGE</h1>
+    <h1 class="design">WORKOUTS PAG</h1>
     
   </div>  
   <div className='disclaimer-workout'>Select one push day, one pull day, and one legs day each week. This approach ensures comprehensive muscle training and promotes overall fitness.</div>
