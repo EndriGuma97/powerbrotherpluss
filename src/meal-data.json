@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "Rice w/Chicken & Broccoli+Avocado",
+        "ingridient1per100cal": "30",
+        "nameIngridient1per100cal": "Rice",
+        "ingridient2per100cal": "21.3",
+        "nameIngridient2per100cal": "Chicken Breast",
+        "ingridient3per100cal": "11.85",
+        "nameIngridient3per100cal": "Broccoli",
+        "ingridient4per100cal": "13",
+        "nameIngridient4per100cal": "Avocado",
+        "imageUrl": "https://images.unsplash.com/photo-1632420758649-a9bde11730ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
+        "recipe": ""
+
+    },
+    {
+        "id": 2,
+        "name": "Boiled Potato w/Chicken & Avocado+Olive Oil",
+        "ingridient1per100cal": "44",
+        "nameIngridient1per100cal": "Boiled Potatoes",
+        "ingridient2per100cal": "19",
+        "nameIngridient2per100cal": "Chicken Breast",
+        "ingridient3per100cal": "12.2",
+        "nameIngridient3per100cal": "Avocado",
+        "ingridient4per100cal": "2",
+        "nameIngridient4per100cal": "Olive Oil",
+        "imageUrl": "https://images.unsplash.com/photo-1585443835125-d85820a16e89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        "recipe": ""
+
+    },
+    {
+        "id": 3,
+        "name": "Salmon w/Boiled Potatoes & Avocado+Bread",
+        "ingridient1per100cal": "30.15",
+        "nameIngridient1per100cal": "Boiled Potatoes",
+        "ingridient2per100cal": "18.2",
+        "nameIngridient2per100cal": "Salmon",
+        "ingridient3per100cal": "10",
+        "nameIngridient3per100cal": "Avocado",
+        "ingridient4per100cal": "9",
+        "nameIngridient4per100cal": "Bread", 
+        "imageUrl": "https://images.unsplash.com/photo-1614627293113-e7e68163d958?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80",
+        "recipe": ""
+    }
+]

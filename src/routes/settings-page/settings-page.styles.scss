@@ -1,0 +1,102 @@
+.setComp {
+  max-width: 800px;
+  margin: 0 auto;
+
+.settings {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease;
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  
+    .header {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    .setting-item {
+      margin-bottom: 15px;
+  
+      .label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #555;
+      }
+  
+      .input,
+      .select {
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s ease;
+        font-size: 1rem;
+  
+        &:focus {
+          border-color: #2196f3;
+          outline: none;
+        }
+      }
+  
+      .select {
+        appearance: none;
+        -webkit-appearance: none;
+        background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><path d="M10.3 4.7L6 9.1 1.7 4.7c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l3.6 3.6 3.6-3.6c.4-.4 1-.4 1.4 0s.4 1 0 1.4z" fill="%23555555"/></svg>');
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 12px;
+      }
+      .save-button {
+        background-color: #ff4081;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #e5004f;
+        }
+      }
+    }
+  
+      .delete-account {
+        font-size: 1rem;
+        color: #ff4081;
+        text-align: center;
+        cursor: pointer;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #e5004f;
+        }
+      }
+    }
+
+    .disclaimer {
+      margin-top: 20px;
+      color: #555555;
+      font-style: italic;
+      font-size: 1.1rem;
+      text-align: center;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+    }
+  
+}
+

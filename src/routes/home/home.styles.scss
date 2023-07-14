@@ -1,0 +1,111 @@
+.homepage {
+    background: url('https://images.unsplash.com/photo-1549476464-37392f717541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &__content {
+      text-align: center;
+      color: #fff;
+    }
+  
+    &__tagline {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+  
+    &__testimonial {
+      margin-bottom: 20px;
+    }
+  
+    &__quote {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    &__testimonial-author {
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  
+    &__features {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+  
+    &__feature {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 20px;
+      max-width: 300px;
+    }
+  
+    &__feature img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 10px;
+    }
+  
+    &__feature-description {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+    }
+  
+    &__cta {
+      margin-bottom: 40px;
+  
+      &-button {
+        padding: 12px 24px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+  
+      &-login {
+        margin-top: 10px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.8);
+  
+        a {
+          color: #fff;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+}
+
+
+.authentication-container {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    margin:20px auto;
+}
+
+@media (max-width: 900px) {
+  .authentication-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 360px;
+      margin:10px auto;
+  }
+}

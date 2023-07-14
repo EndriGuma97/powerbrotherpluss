@@ -1,0 +1,85 @@
+.checkout-container {
+    width: 55%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 0;
+  
+    .checkout-header {
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-evenly;
+      border-bottom: 1px solid darkgrey;
+  
+      .header-block {
+        text-transform: capitalize;
+        width: 25%;
+  
+        &:last-child {
+          width: 8%;
+        }
+      }
+    }
+    .generateButton {
+
+        margin-top: 30px;
+        margin-left: auto;
+        min-width: 165px;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  font-size: 15px;
+  background-color:#4285f4;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed';
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    background-color:  #357ae8;
+    border: none;
+  }
+      }
+  
+      
+  .disclaimer {
+    margin-top: 20px;
+    color: #555555;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  }
+
+  @media (max-width: 700px) {
+    /* CSS properties and values for screens up to 600px */
+    .checkout-container {
+      width: 100%;
+      min-height: 20vh;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 15px;
+
+      .checkout-header {
+        width: 87%;
+    }
+
+    .generateButton {
+
+      margin: 17px auto;
+      width: 100px;
+padding: 0 30px 0 30px;
+font-size: 14px;
+
+    }
+  }
+}

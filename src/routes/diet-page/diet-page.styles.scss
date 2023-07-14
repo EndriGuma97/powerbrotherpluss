@@ -1,0 +1,35 @@
+
+.dietPage {
+    max-width: 500px;
+    margin: 0 auto;
+   .meals-container {
+       margin-left: 20px;
+       margin-right: 20px;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       column-gap: 10px;
+       row-gap: 50px;
+   }
+
+   .designwrapMeals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+  .designMeals {
+    font-size: 30px; /* Adjust the font size as needed */
+    text-align: center;
+    color: #000; /* Set the desired text color */
+  }
+  }
+
+  .disclaimer-Meals {
+    color: #555555;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+   }

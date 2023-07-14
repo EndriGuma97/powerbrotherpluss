@@ -1,0 +1,55 @@
+.checkout-item-container {
+    width: 100%;
+    display: flex;
+    min-height: 100px;
+    border-bottom: 1px solid darkgrey;
+    padding: 15px 0;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    .image-container {
+      width: 23%;
+      padding-right: 15px;
+      margin-left: -10px;
+  
+      img {
+        width: 120px;
+        height: 100px;
+        object-fit: cover;
+      }
+    }
+    .name,
+    .quantity {
+      width: 25%;
+    }
+  
+  
+    .remove-button {
+      padding-left: 12px;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 700px) {
+    /* CSS properties and values for screens up to 600px */
+    .checkout-item-container {
+      width: 88%;
+      padding: 12px 0;
+      font-size: 14px;
+
+    .image-container {
+      width: 18%;
+  
+      img {
+        width: 75px;
+        height:75px;
+      }
+  }
+
+
+    .remove-button {
+      padding-left: 15px;
+    }
+}
+}
