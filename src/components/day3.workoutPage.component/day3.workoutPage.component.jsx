@@ -1,3 +1,5 @@
+import '../day1.workoutPage.component/day1.workoutPage.styles.scss';
+
 const ThirdDay = () => {
     return (
         <div className="pushDay-comp"><div class="designwrapd1">
