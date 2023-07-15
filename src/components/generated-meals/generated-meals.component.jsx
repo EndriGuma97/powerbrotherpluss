@@ -67,7 +67,7 @@ const GeneratedMeals = () => {
            <p>{meals[0].nameIngridient2per100cal}: {Math.trunc((meals[0].ingridient2per100cal * (calories / 3 - 300)) / 100)} gr</p>
            <p>{meals[0].nameIngridient3per100cal}: {Math.trunc((meals[0].ingridient3per100cal * (calories / 3 - 300)) / 100)} gr</p>
            <p>{meals[0].nameIngridient4per100cal}: {Math.trunc((meals[0].ingridient4per100cal * (calories / 3 - 300)) / 100)} gr</p>
-           <p>Recipe: {meals[0].recipe}</p>
+           <p className="recipe">Recipe: {meals[0].recipe}</p>
             </div>
                 : <p className="no-meals">No meal generated yet...(1)</p>}</div> 
                   <div className="meal-cart" style={{ display: activeCard === 2 ? 'block' : 'none' }}>{meals[1] ? <div className="meal-info">
@@ -78,7 +78,7 @@ const GeneratedMeals = () => {
            <p>{meals[1].nameIngridient2per100cal}: {Math.trunc((meals[1].ingridient2per100cal * (calories / 3 - 300)) / 100)} gr</p>
            <p>{meals[1].nameIngridient3per100cal}: {Math.trunc((meals[1].ingridient3per100cal * (calories / 3 - 300)) / 100)} gr</p>
            <p>{meals[1].nameIngridient4per100cal}: {Math.trunc((meals[1].ingridient4per100cal * (calories / 3 - 300)) / 100)} gr</p>
-           <p>Recipe: {meals[1].recipe}</p>
+           <p className="recipe">Recipe: {meals[1].recipe}</p>
             </div>
                 : <p className="no-meals">No meal generated yet...(2)</p>}</div>
                                     <div className="meal-cart" style={{ display: activeCard === 3 ? 'block' : 'none' }}>{meals[2] ? <div className="meal-info">
@@ -89,7 +89,7 @@ const GeneratedMeals = () => {
            <p>{meals[2].nameIngridient2per100cal}: {Math.trunc((meals[2].ingridient2per100cal * (calories / 3 - 300)) / 100)} gr</p>
            <p>{meals[2].nameIngridient3per100cal}: {Math.trunc((meals[2].ingridient3per100cal * (calories / 3 - 300)) / 100)} gr</p>
            <p>{meals[2].nameIngridient4per100cal}: {Math.trunc((meals[2].ingridient4per100cal * (calories / 3 - 300)) / 100)} gr</p>
-           <p>Recipe: {meals[2].recipe}</p>
+           <p className="recipe">Recipe: {meals[2].recipe}</p>
             </div>
                 : <p className="no-meals">No meal generated yet...(3)</p>}</div>
                 <div className="meal-cart" style={{ display: activeCard === 4 ? 'block' : 'none' }}>

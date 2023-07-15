@@ -1,6 +1,7 @@
+
 .meal-cart {
   width: 300px;
-  height: 600px;
+  height: 700px;
   margin: 40px auto;
   background-color: #f5f5f5;
   border-radius: 10px;
@@ -61,6 +62,11 @@
       color: #333;
     }
 
+    .recipe {
+      font-size: 15px;
+      margin-right: 7px;
+    }
+
     img {
       max-height: 180px;
       width: 100%;
@@ -75,13 +81,13 @@
 
   .carousel-buttons span:first-child {
     position: relative;
-    bottom: 365px;
+    bottom: 465px;
     left: 4px;
     cursor: pointer;
   }
   .carousel-buttons span:last-child {
     position: relative;
-    bottom: 365px;
+    bottom: 465px;
    right: -232px;
    cursor: pointer;
   }
